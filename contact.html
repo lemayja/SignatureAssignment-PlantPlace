@@ -16,6 +16,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop Plants</a></li>
         <li><a href="plant-care.html">Plant Care</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -23,15 +24,50 @@
   </header>
 
   <main>
-    <section class="centered-content">
-      <h2>Get In Touch</h2>
-      <p>Email: plants@theplantplace.com</p>
-      <p>Address: 123 Plant St, Plant City, Plantachusetts</p>
-    </section>
+  <section class="centered-content">
+    <h2>Contact Us</h2>
 
-    <div class="divider"></div>
+<form class="contact-form">
 
-        <section class="featured">
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required minlength="2">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" required>
+      <option value="">--Select an option--</option>
+      <option>Plant Question</option>
+      <option>Order Inquiry</option>
+      <option>Care Help</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+  </div>
+
+  <button type="submit">Send Message</button>
+
+</form>
+
+  </section>
+
+  <div class="divider"></div>
+
+      <section class="featured">
       <h2>Featured Plants</h2>
 
       <div class="plant-gallery">
@@ -57,7 +93,7 @@
       </div>
     </section>
 
-  </main>
+</main>
 
   <footer>
     <p>Copyright © 2026 The Plant Place</p>
